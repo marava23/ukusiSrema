@@ -1,0 +1,702 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: font;
+    src: url(Lora-Regular.ttf);
+}
+@media screen {
+    body {
+        font-family: font;
+    }
+}
+@media print{
+    body{
+        font-family:"Times New Roman";
+    }
+}
+:root {
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 0.1rem;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+.cleaner {
+    clear: both;
+}
+#wraper{
+    min-height: 90vh;
+}
+header {
+    background-color: #fffeea;
+    padding:0.5rem 0;
+}
+.header-width{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+#logo {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+#logo img {
+    width: 30%;
+    border-radius: 50%;
+}
+.nav-button{
+    display: block;
+    position: absolute;
+    top:35%;
+    right: 0;
+}
+#meni {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    display:none;
+}
+.active{
+    background-color: #fffdd0;
+    color: black;
+}
+#manjaSirina{
+    width: 40%;
+}
+.meni {
+    font-size: 1.5rem;
+    padding: 2.5rem 0rem;
+}
+.fa-bars {
+    font-size: xx-large;
+}
+#meni ul li {
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+    display: list-item;
+}
+#meni ul li a{
+    color: black;
+}
+#meni ul li a:hover {
+    background-color: #fffdd0;
+    color: black;
+}
+#main {
+    background-image: url(../img/pozadina.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 85vh;
+    position: relative;
+}
+.main-naslov {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+#main h1{
+    text-align: center;
+    color: #fffdd0;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px black;
+}
+#main h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    color: #fffdd0;
+    text-shadow: 2px 2px black;
+}
+#kontakt {
+    padding:2rem 0;
+    background-color: white;
+}
+.kontakt-border {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.anketa {
+    padding: 1rem 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+.kontakt-levo{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.kontakt-levo input[type=text], .kontakt-levo input[type=email] {
+    width: 70%;
+    padding:0.5rem 0;
+    text-align: center;
+}
+.kontakt-desno{
+    text-align: center;
+}
+.kontakt-desno img{
+    width:40%;
+    margin: 0 auto;
+}
+.kontakt-levo h2, .kontakt-desno h2 {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.forma {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.forma textarea {
+    width: 70%;
+    height: 4rem;
+    text-align: center;
+    font-family:font;
+}
+.forma input [type=text], .forma input [type=password] {
+    width: 90%;
+    padding: 0.5rem 0;
+    text-align: center;
+    margin: 0.3rem 0;
+}
+.forma input[type=number]{
+    width: 50%;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.forma select {
+    width: 10%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.forma input[type=button], .forma input[type=reset], .forma input[type=submit] {
+    padding:1rem 2rem;
+    margin-top: 1rem;
+    background-color: white;
+    color: black;
+}
+.forma input[type=reset]:hover, .forma input[type=button]:hover, .forma input[type=submit]:hover{
+    background-color: #fffdd0;
+    cursor:pointer;
+}
+.reg{
+    font-size: 1rem;
+}
+.kontakt-desno a {
+    color: black;
+    background-color: #fffdd0;
+}
+.kontakt-desno p {
+    width: 80%;
+    margin: auto;
+    padding: 0.5rem 0;
+}
+.kontakt-desno img {
+    padding: 1rem 0;
+}
+footer {
+    padding: 1rem 0;
+    background-color: #fffeea;
+    display: flex;
+    text-align: center;
+}
+footer li {
+    display: list-item;
+    color: black;
+    padding: 0.2rem 0;
+}
+footer li a, footer p {
+    color:black;
+    font-weight: 600;
+}
+footer li a:hover {
+    border-bottom: 2px solid black;
+}
+.social-icons li a:hover{
+    border: none;
+}
+.footer-meni, .social-icons, .footer-logo {
+    width: 30%;
+    margin: 0 auto;
+}
+.fa-facebook, .fa-instagram {
+    font-size: 1.2rem;
+}
+.fa-facebook:hover {
+    color: #3b5998;
+}
+.fa-instagram:hover{
+    color:#833AB4;
+}
+.fa-bars {
+    color: black;
+}
+.fa-bars:hover{
+    background-color: #fffdd0;
+}
+#prodavnica {
+    width: 98%;
+    margin:0 auto;
+    padding: 2rem 0;
+    min-height: 80vh;
+}
+#prodavnica h1 {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+#proizvodi{
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.proizvodi {
+    position: relative;
+    padding: 1rem 0;
+    width: 30%;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));*/
+    /*grid-column-gap: 1.5rem;*/
+    /*grid-row-gap: 2rem;*/
+}
+.proizvod{
+    position: relative;
+}
+.proizvod img {
+    width: 90%;
+    display: block;
+    height: 20rem;
+}
+.proizvod img:hover{
+    opacity: 0.5;
+}
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+}
+.nav-icon{
+    float: right;
+    margin-top:1rem;
+    margin-right: 1rem;
+}
+.prihvati {
+    color: green;
+    font-size: 20px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.odbij {
+    color: red;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+#adminPourdzbine {
+    display: none;
+}
+.cart-items {
+    position: absolute;
+    right: 0.5rem;
+    background-color: #fffdd0;
+    padding: 0 5px;
+    border-radius: 30%;
+    color: black;
+}
+input[type=text]{
+    text-align: center;
+}
+.nav-icon {
+    font-size: 1.5rem;
+}
+.cart-overlay {
+    position: fixed;
+    top: -1rem;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: var(--mainTransition);
+    background: rgba(240, 157, 81, 0.5);
+    z-index: 2;
+    visibility: hidden;
+}
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    min-width: 450px;
+    height: 100%;
+    overflow: scroll;
+    z-index: 3;
+    background: rgb(231, 226, 221);
+    padding: 1.5rem;
+    transition: var(--mainTransition);
+    transform: translateX(100%);
+}
+.showCart {
+    transform: translateX(0);
+}
+.fa-shopping-cart {
+    margin-right: 0.5rem;
+}
+.close-cart {
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.cart h2 {
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 2rem;
+}
+.cart-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+.cart-item img {
+    width: 75px;
+    height: 75px;
+}
+.cart-item h4 {
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+}
+.cart-item h5 {
+    margin: 0.5rem 0;
+    letter-spacing: var(--mainSpacing);
+}
+.item-amount {
+    text-align: center;
+}
+.remove-item {
+    color: grey;
+    cursor: pointer;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+    color: #fffdd0;
+    cursor: pointer;
+}
+.cart-footer {
+    margin-top: 2rem;
+    letter-spacing: var(--mainSpacing);
+    text-align: center;
+}
+.cart-footer h3 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.banner {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.banner-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 2rem;
+}
+.banner-description {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 1rem;
+}
+.banner-btn {
+    padding: 1rem 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-size: 1rem;
+    background:  #fffdd0;
+    color: black;
+    border: 1px solid #fffdd0;
+    transition: var(--mainTransition);
+    cursor: pointer;
+}
+.banner-btn:hover {
+    background: transparent;
+    color:  #fffdd0;
+}
+.transparentBcg {
+    visibility: visible;
+}
+.infromacije {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    left: 0;
+    width: 70%;
+    margin: 0 auto;
+}
+.infromacije h3{
+    text-align: center;
+    padding:0.2rem 0;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.infromacije button{
+    text-align: center;
+    background-color:rgba(255, 254, 234, 0.8);
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    width: 90%;
+    border: none;
+}
+
+.infromacije a{
+    color:black;
+}
+.infromacije button:hover{
+    cursor: pointer;
+    background-color: #fffdd0;
+    color: black;
+}
+.detaljnije {
+    width: 80%;
+    min-height:70vh;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+}
+.zaglavlje {
+    width: 90%;
+    margin:0 auto;
+    padding: 1rem 0 2rem 0;
+}
+.fa-window-close {
+    font-size: 1.5rem;
+}
+.inf-content {
+    padding: 1rem 0;
+}
+.inf-img{
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+.inf-img img {
+    width:100%;
+}
+.inf-text{
+    width: 95%;
+    margin: 0 auto;
+}
+.logovanje{
+    padding: 1rem;
+    text-align: center;
+}
+.logovanje i {
+    float: right;
+}
+.logovanje input[type=text], .logovanje input[type=password], .logovanje input[type=email]{
+    padding: 0.2rem 0;
+    text-align: center;
+    width: 70%;
+}
+.logovanje input[type=reset],.logovanje input[type=button]{
+    padding:0.6rem 0.4rem;
+}
+#log{
+    display: none;
+    width: 250px;
+    position: fixed;
+    top:20%;
+    left:40%;
+    z-index: 1;
+    background-color:#fffeea;
+}
+.error {
+    color:red;
+    font-size: 12pt;
+    text-align: center;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table-sm th,
+.table-sm td {
+    padding: 0.3rem;
+}
+.dugme{
+    padding: 0.2rem;
+}
+#pokaziArhivu{
+    padding: 1rem;
+    font-size: 1rem;
+}
+#pokaziArhivu a{
+    color: black;
+}
+#prodavnica input{
+    text-align: center;
+}
+.pretraga{
+    text-align:center;
+    width: 30%;
+    margin: 0 auto;
+    height: 3rem;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    font-size:16px;
+}
+#prodaflex{
+    display: flex;
+    flex-direction: column;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    margin: 1rem;
+    text-decoration: none;
+    transition: background-color .3s;
+    background-color: #ddd;
+}
+.pagination a:hover:not(.active) {background-color: #fffdd0;}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #fffeea;
+    padding: 1rem 0;
+    z-index: 1;
+}
+.dropdown-content li{
+    padding: 1rem 0;
+}
+.dropdown-content {
+    position: unset;
+}
+@media (max-width: 1199.98px) {
+    #logo img {
+        width: 40%;
+        border-radius: 50%;
+    }
+}
+@media (max-width: 991.98px) {
+
+}
+@media (max-width: 767.98px) {
+    .forma select {
+        width: 70%;
+    }
+    #main h1{
+        font-size: 2rem;
+    }
+    #main h2 {
+        font-size: 1rem;
+    }
+    #main {
+        background-image: url(../img/pozadina2.jpg);
+    }
+    .kontakt-border {
+        flex-direction: column;
+    }
+    .kontakt-levo, .kontakt-desno {
+        width: 100%;
+    }
+    .detaljnije {
+        width: 98%;
+    }
+    .ing-img {
+        width: 95%;
+    }
+    #log{
+        top:10%;
+        left:0;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .proizvodi {
+        width: 48%;
+    }
+    .pretraga{
+        width: 70%;
+    }
+    .cart {
+        width: 90%;
+        margin: 0 auto;
+        min-width: 450px;
+    }
+
+}
+@media (max-width: 575.98px) {
+    #main h1{
+        font-size: 1rem;
+    }
+    #main h2 {
+        font-size: 0.7rem;
+    }
+    .nav-button{
+        top:25%;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer-meni, .social-icons, .footer-logo {
+        width: 95%;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+    #logovanje{
+        width: 200px;
+    }
+    .proizvodi {
+        width: 95%;
+    }
+}
+

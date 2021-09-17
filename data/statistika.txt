@@ -1,0 +1,9 @@
+/ukusisremaphp/index.php?page=proizvodi	7
+/ukusisremaphp/index.php?page=proizvod&id=4	1
+/ukusisremaphp/index.php?page=proizvod&id=5	1
+/ukusisremaphp/index.php?page=proizvod&id=6	1
+/ukusisremaphp/index.php?page=proizvod&id=1	1
+/ukusisremaphp/index.php?page=proizvod&id=2	1
+/ukusisremaphp/index.php?page=proizvod&id=3	1
+/ukusisremaphp/index.php?page=profil&id=1	1
+/ukusisremaphp/index.php?page=profil/izmena&id=1	1
