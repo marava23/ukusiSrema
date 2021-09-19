@@ -14,8 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                     $mail->isSMTP();
                     $mail->Host = "smtp.gmail.com";
                     $mail->SMTPAuth = true;
-                    $mail->Username = "milos.maravic.269.19@ict.edu.rs";
-                    $mail->Password = "uK7q5i7L";
+                    $mail->Username = "";
+                    $mail->Password = "";
                     $mail->SMTPSecure = "tls";
                     $mail->Port = 587;
                     $mail->From = "milos.maravic.269.19@ict.edu.rs";
